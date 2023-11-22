@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webpack 4 Starter</title>
+  <link href="style.css" rel="stylesheet"></head>
+  <body>
+    
+    <div class="header" id="header">
+
+      <div class="navigation" id="navigation">
+        <div class="navigation-burger" id="navigation-burger">
+          <img class="nav-burger" id="nav-burger" src="./img/navigation-img/burger.svg" alt="Menu-img-miss">
+        </div>
+
+        <div class="navigation-logo">
+          <img src="./img/navigation-img/Group.svg" alt="Company-Logo-miss">
+        </div>
+        <div class="navigation-border1">
+          <img src="./img/navigation-img/border.svg" alt="navigation-border">
+        </div>
+        <div class="navigation-phone" id="mobile-hidden">
+          <img src="./img/navigation-img/call.svg" alt="header_menu-phone">
+        </div>
+        <div class="navigation-chat" id="mobile-hidden">
+          <img src="./img/navigation-img/chat.svg" alt="header_menu-chat">
+        </div>
+        <div class="navigation-profile" id="mobile-hidden">
+          <img src="./img/navigation-img/profile.svg" alt="header_menu-profile">
+        </div>
+        <div class="navigation-border2">
+          <img src="./img/navigation-img/border.svg" alt="navigation-border">
+        </div>
+
+        <div class="navigation-settings">
+          <span class="settings-span_desktop">Оставить заявку</span>
+          <img class="navigation-top" src="./img/navigation-img/repair.svg" alt="Cheack-Status-miss">
+        </div>
+        <div class="navigation-search">
+          <span class="settings-span_desktop">Статус ремонта</span>
+          <img class="navigation-top" src="./img/navigation-img/checkstatus.svg" alt="navigation-search">
+        </div>
+      </div>
+
+      <div class="aside hidden" id="aside">
+        <div class="aside-side">
+          <div class="aside-side_navigation-desktop">
+            <div class="aside-logo_desktop">
+              <img src="./img/navigation-img/Group.svg" alt="Company-Logo-miss">
+            </div>
+            <div class="navigation-search">
+              <span class="settings-span_desktop">Статус ремонта</span>
+              <img class="navigation-top" src="./img/aside-img/search.svg" alt="navigation-search">
+            </div>
+          </div>
+          <div class="aside-side-menu">
+            <span class="aside-side-menu_list" title="Ремонт техники">
+              <a class="aside-side-menu_list-a" id="rem" href="rem-html-task1-4.ru">Ремонт техники</a></span>
+
+            <span class="aside-side-menu_list" title="Ремонт техники">
+              <a class="aside-side-menu_list-a" id="rem" href="rem-html-task1-4.ru">Услуги и сервисы</a></span>
+
+            <span class="aside-side-menu_list" title="Корпоративным клиентам"><a class="korp" href="rem-html-task1-4.ru">Корпоративным клиентам</a></span>
+
+            <span class="aside-side-menu_list" title="Продавцам техники"><a class="prod" href="rem-html-task1-4.ru">Продавцам техники</a></span>
+
+            <span class="aside-side-menu_list" title="Партнерам"><a class="part" href="rem-html-task1-4.ru">Партнерам</a></span>
+
+            <span class="aside-side-menu_list" title="Производителям"><a class="proiz" href="rem-html-task1-4.ru">Производителям</a></span>
+
+            <span class="aside-side-menu_list" title="Наши сервисные центры"><a class="serv" href="rem-html-task1-4.ru">Наши cервисные центры</a></span>
+
+            <span class="aside-side-menu_list" title="Контакты"><a class="kont" href="rem-html-task1-4.ru">Контакты</a></span>
+          </div>
+
+          <div class="contact">
+            <div class="bottom-image">
+              <img class="bottom-img_phone" id="bottom-img_phone" src="./img/aside-img/phone.svg" alt="img_phone">
+              <img class="bottom-img_chat" id="bottom-img_chat" src="./img/aside-img/chat.svg" alt="bottom-img_chat">
+              <img class="bottom-img_profile" src="./img/aside-img/profile.svg" alt="img_profile">
+            </div>
+            <p class="contact-email">mail@cps.com</p>
+            <p class="contact-number">8 800 890 8900</p>
+          </div>
+          <div class="lang">
+            <span class="lang_item" title="Russian"><a lang="RU" href="ru-html-task1-4.ru">RU</a></span>
+            <span class="lang_item" title="English"><a lang="EN" href="ru-html-task1-4.en">EN</a></span>
+            <span class="lang_item" title="Czech"><a lang="CH" href="ru-html-task1-4.ch">CH</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback hidden" id="feedback">
+        <div class="navigation-close_feedback" id="navigation-close_feedback">
+          <img class="nav-burger" id="nav-burger" src="./img/aside-img/close-burger.svg" alt="Menu-img-miss">
+        </div>
+        
+        <h1 class="Feedback-head">Обратная связь</h1>
+        <div class="Feedback-item">   <input class="Feedback-name" type="text" placeholder="Имя"> </div>
+        <div class="Feedback-item">    <input class="Feedback-number" type="number" placeholder="Телефон"></div>
+        <div class="Feedback-item">    <input class="Feedback-email" type="email" placeholder="Email"></div>
+        <div class="Feedback-item">  <input class="Feedback-text" type="text" placeholder="Сообщение"> </div>
+      <div class="Feedback-confirm">
+        <div>Нажимая “отправить”, вы даете согласие на <a href="ya.ru" style="color: red;">
+          обработку персональных данных</a> и соглашаетесь с <a href="ya.ru" style="color: red;">
+            нашей политикой конфиденциальности</a> </div>
+        <div class="Feedback-confirm_button">
+            <img src="./img/feedback-img/Otpravit.svg">
+          </div>
+          </div>
+      </div>
+
+      <div class="callBack hidden" id="callBack">
+        <div class="navigation-close_callBack" id="navigation-close_callBack">
+          <img class="nav-burger" id="nav-burger" src="./img/aside-img/close-burger.svg" alt="Menu-img-miss">
+        </div>
+        
+        <h1 class="callBack-head">Заказать звонок</h1>
+        
+        <div class="callBack-item">    <input class="callBack-number" type="number" placeholder="Телефон"></div>
+        
+        
+      <div class="callBack-confirm">
+        <div>Нажимая “отправить”, вы даете согласие на <a href="ya.ru" style="color: red;">
+          обработку персональных данных</a> и соглашаетесь с <a href="ya.ru" style="color: red;">
+            нашей политикой конфиденциальности</a> </div>
+        <div class="callBack-confirm_button">
+            <img src="./img/feedback-img/Otpravit.svg">
+          </div>
+          </div>
+      </div>
+
+  </div>
+
+
+    <div class="main" id="main">
+      <div class="title">
+        <img class="title-img" src="./img/main_img/bord.png">
+        <h1 class="title-text">Услуги и сервисы</h1>
+      </div>
+
+      <div class="remont-ystroistv">
+        <div class="slide-menu">
+          <div class="slide-menu_bar">
+            <div class="slide-menu_button" id="rem">Ремонтируемые устройства</div>
+            <div class="slide-menu_button" id="dop">Дополнительные услуги</div>
+            <div class="slide-menu_button" id="cen">Цены на услуги</div>
+            <div class="slide-menu_button" id="adr">Адреса сервисных центров</div>
+            <div class="slide-menu_button" id="spc">Специальные цены</div>
+            <div class="slide-menu_button" id="otz">Отзывы</div>
+        </div>
+          </div>
+          
+
+        <div class="fade"></div>
+      </div>
+
+      <div class="first-block">
+        <div class="block-text">
+          Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+          Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
+          гарантией производителя.<br><br><span class="block-text_tabletop">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span><span class="block-text_desktop">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+            </span> 
+
+          
+
+          
+
+          <div class="block-text_button-dalee">
+            <img src="./img/layout_img/dalee.png" class="button-dalee_img" alt="image-miss"><div class="block_dalee"> Читать далее</div>
+          </div>
+        </div>
+
+        <div class="block_image"><img class="block_image-img" src="./img/layout_img/layout1.png"></div>
+      </div>
+
+      <div class="remont-brands">
+        <div class="remont-brands_text">Ремонт техники различных брендов</div>
+        <div class="fade1"></div>
+        <div class="brands-desktop" id="brands">
+          <div class="brands" id="brand"><img class="brands-img" src="./img/slider-img/1.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/slider-img/2.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/slider-img/3.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/slider-img/4.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/slider-img/5.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/slider-img/6.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/slider-img/5.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/slider-img/6.png"></div>
+          <div class="brands" id="brand-hidden1"><img class="brands-img" src="./img/slider-img/7.png"></div>
+          <div class="brands" id="brand-hidden2"><img class="brands-img" src="./img/slider-img/8.png"></div>
+          <div class="brands" id="brand-hidden3"><img class="brands-img" src="./img/slider-img/7.png"></div>
+          <div class="brands" id="brand-hidden4"><img class="brands-img" src="./img/slider-img/8.png"></div>
+        </div>
+        <div class="tabletop-hidden" id="tabletop-hidden">
+          <div class="brands" id="brand-desktop"><img class="brands-img" src="./img/slider-img/7.png"></div>
+          <div class="brands" id="brand-desktop"><img class="brands-img" src="./img/slider-img/8.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/slider-img/copy1.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/slider-img/copy2.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/slider-img/copy3.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/slider-img/copy2.png"></div>
+          <div class="brands" id="remont-brands_hidden"><img class="brands-img" src="./img/slider-img/copy3.png"></div>
+          <div class="brands" id="remont-brands_hidden1"><img class="brands-img" src="./img/slider-img/copy2.png"></div>
+          <div class="brands" id="remont-brands_hidden2"><img class="brands-img" src="./img/slider-img/copy3.png"></div>
+        </div>
+        <div class="show-hide_first-tabletop">
+          <img src="./img/layout_img/dalee.png" class="show-hide_img" alt="image-miss"><div class="show-hide_first-text"> Показать все</div>
+          
+          
+        </div>
+        <div class="show-hide_first-desktop">
+          <img src="./img/layout_img/dalee.png" class="show-hide-desktop" alt="image-miss"><div class="show-hide_desktop-text"> Показать все</div>
+        </div>
+
+
+        <div class="swiper2" id="swip2">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="wrapper">
+              <div class="swiper-slide"><img src="./img/slider-img/1.png"></div>
+              <div class="swiper-slide"><img src="./img/slider-img/2.png"></div>
+              <div class="swiper-slide"><img src="./img/slider-img/3.png"></div>
+              <div class="swiper-slide"><img src="./img/slider-img/4.png"></div>
+              <div class="swiper-slide"><img src="./img/slider-img/5.png"></div>
+              <div class="swiper-slide"><img src="./img/slider-img/6.png"></div>
+              <div class="swiper-slide"><img src="./img/slider-img/7.png"></div>
+              <div class="swiper-slide"><img src="./img/slider-img/8.png"></div>
+              <div class="swiper-slide"><img src="./img/slider-img/copy1.png"></div>
+              <div class="swiper-slide"><img src="./img/slider-img/copy2.png"></div>
+              <div class="swiper-slide"><img src="./img/slider-img/copy3.png"></div>
+            </div>
+
+            <div class="swiper-pagination" id="pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="remont-tech">
+        <div class="remont-tech_text">Ремонт различных видов техники</div>
+        <div class="fade2"></div>
+        <div class="brands-desktop" id="brands">
+          <div class="brands" id="brand"><img class="brands-img" src="./img/brands-img/cat1.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/brands-img/cat2.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/brands-img/cat1.png"></div>
+          <div class="brands" id="brand"><img class="brands-img" src="./img/brands-img/cat1.png"></div>
+          <div class="brands" id="hide1"><img class="brands-img" src="./img/brands-img/cat1.png"></div>
+          <div class="brands" id="hide2"><img class="brands-img" src="./img/brands-img/cat1.png"></div>
+          <div class="brands" id="hide3"><img class="brands-img" src="./img/brands-img/cat1.png"></div>
+          <div class="brands" id="hide4"><img class="brands-img" src="./img/brands-img/cat1.png"></div>
+        </div>
+        <div class="tabletop-hidden" id="tabletop-hidden">
+          <div class="brands" id="brand-desktop"><img class="brands-img" src="./img/brands-img/cat1.png"></div>
+          <div class="brands" id="brand-desktop"><img class="brands-img" src="./img/brands-img/cat2.png"></div>
+          <div class="brands" id="brand-desktop"><img class="brands-img" src="./img/brands-img/cat2.png"></div>
+          <div class="brands" id="remont-tech_brand-hidden"><img class="brands-img" src="./img/brands-img/cat2.png"></div>
+          <div class="brands" id="remont-tech_brand-hidden1"><img class="brands-img" src="./img/brands-img/cat2.png"></div>
+        </div>
+        <div class="show-hide_second-tabletop">
+          <img src="./img/layout_img/dalee.png" class="show-hide_img-second" alt="image-miss"><div class="show-hide_second-text"> Показать все</div>
+        </div>
+        <div class="show-hide_second-desktop">
+          <img src="./img/layout_img/dalee.png" class="show-hide_second" alt="image-miss"><div class="show-hide_desktop-second"> Показать все</div>
+        </div>
+        <div class="swiper2" id="swip2">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="wrapper">
+              <div class="swiper-slide"><img src="./img/brands-img/cat1.png"></div>
+              <div class="swiper-slide"><img src="./img/brands-img/cat2.png"></div>
+              <div class="swiper-slide"><img src="./img/brands-img/cat2.png"></div>
+              <div class="swiper-slide"><img src="./img/brands-img/cat2.png"></div>
+              <div class="swiper-slide"><img src="./img/brands-img/cat2.png"></div>
+            </div>
+            <div class="swiper-pagination" id="pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="price">
+        
+        <div class="price-text">Цены на услуги</div>
+        <div class="fade3"></div>
+
+        <div class="tabletop-hidden_price" id="tabletop-hidden_price">
+          <div class="first-price" id="price-items">
+            <div>Диагностика</div>
+            <div>Бесплатно</div>
+            <div>30 мин</div>
+            <img src="./img/price-img/zakazat.svg">
+          </div>
+          <div class="first-price" id="price-items">
+            <div>Замена дисплея</div>
+            <div>1 000 ₽</div>
+            <div>30-120 мин</div>
+            <img src="./img/price-img/zakazat.svg">
+          </div>
+          <div class="first-price" id="price-items">
+            <div>Замена полифонического динамика</div>
+            <div>1 000 ₽</div>
+            <div>30-120 мин</div>
+            <img src="./img/price-img/zakazat.svg">
+          </div>
+          <div class="first-price" id="price-items">
+            <div>Тестирование с выдачей технического заключения</div>
+            <div>1 000 ₽</div>
+            <div>30-120 мин</div>
+            <img src="./img/price-img/zakazat.svg">
+          </div>
+          <div class="first-price" id="price-items">
+            <div>Замена программного обеспечения</div>
+            <div>1 000 ₽</div>
+            <div>30-120 мин</div>
+            <img src="./img/price-img/zakazat.svg">
+          </div>
+        </div>
+
+        <div class="swiper2" id="swip2">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="wrapper">
+              <div class="swiper-slide"><img src="./img/price-img/Group.png"></div>
+              <div class="swiper-slide"><img src="./img/price-img/Group.png"></div>
+              <div class="swiper-slide"><img src="./img/price-img/Group.png"></div>
+              <div class="swiper-slide"><img src="./img/price-img/Group.png"></div>
+              <div class="swiper-slide"><img src="./img/price-img/Group.png"></div>
+            </div>
+
+            <div class="swiper-pagination" id="pagination"></div>
+          </div>
+        </div>
+        <div class="price-text_nds">
+          <div class="price-text_nds-text">Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.</div>
+          <div class="price-text_commers">
+            <div>Получить коммерческое предложение</div>
+            <img class="price-text_commers-img" src="./img/price-img/more.svg">
+          </div>
+        </div>
+    
+      </div>
+      <div class="footer">
+        <div class="first-item"> © 2019 CPS </div>
+        <div class="second-item"> Разработано командой Apesong</div>
+        <div class="third-item"> Политика конфиденциальности</div>
+        <div class="fourth-item">
+          Информация, размещенная на данной странице, не является публичной
+          офертой</div>
+      </div>
+      </div>
+      
+    
+  <script type="text/javascript" src="./js/bundle.js"></script></body>
+</html>
